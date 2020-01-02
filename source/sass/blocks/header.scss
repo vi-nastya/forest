@@ -24,6 +24,13 @@
   text-transform: uppercase;
   line-height: 1.538;
   text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.17);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .header-logo-wrapper {
@@ -54,7 +61,14 @@
   border: 2px solid $additional-color;
   border-radius: 2px;
 
+  cursor: pointer;
+
   &:nth-of-type(1) {
     margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.2);
   }
 }
