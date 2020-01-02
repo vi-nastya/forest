@@ -5,6 +5,7 @@
 .news-wrapper {
   display: flex;
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .news__column {
@@ -28,7 +29,6 @@
   flex-direction: column;
 
   background-color: $additional-color;
-  margin-bottom: 30px;
 
   &--video {
     min-width: 750px;
@@ -36,6 +36,10 @@
 
   &--picture {
     background-image: url("../img/news-2.jpg");
+  }
+
+  &:nth-last-of-type(1) {
+    margin-top: 30px;
   }
 }
 
