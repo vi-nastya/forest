@@ -6,13 +6,17 @@
   background-image: url("../img/intro-bg.jpg");
 }
 
-.header-nav__list {
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__list,
+.header-lang__list {
   @include reset-list;
 
   display: flex;
 }
-
-.header-nav__item {}
 
 .header-nav__link {
   margin-right: 30px;
@@ -25,6 +29,28 @@
   line-height: 1.538;
   text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.17);
 
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.header-lang__button {
+  margin-right: 30px;
+  padding: 0;
+
+  font-size: 13px;
+  font-family: 'Open Sans';
+  color: $additional-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.538;
+  text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.17);
+
+  background: none;
+  border: none;
   cursor: pointer;
 
   &:hover,
