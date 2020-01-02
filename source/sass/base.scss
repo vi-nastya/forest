@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Lavanderia';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/lavanderia-regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lavanderia Sturdy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/lavanderia-sturdy.otf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}

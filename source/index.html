@@ -9,32 +9,67 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a>Home</a></li>
-          <li><a>News</a></li>
-          <li><a>About us</a></li>
-          <li><a>Our mission</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Join us</a></li>
-          <li><a>Contact</a></li>
+    <header class="header">
+      <div class="container">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a class="header-nav__link">Home</a></li>
+          <li class="header-nav__item"><a class="header-nav__link">News</a></li>
+          <li class="header-nav__item">
+            <a class="header-nav__link">About us</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link">Our mission</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link">Projects</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link">Join us</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link">Contact</a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button>en</button></li>
-        <li><button>es</button></li>
-        <li><button>fr</button></li>
-      </ul>
+        <ul>
+          <li><button>en</button></li>
+          <li><button>es</button></li>
+          <li><button>fr</button></li>
+        </ul>
+        <section class="header-intro">
+          <h2 class="visually-hidden">Forest</h2>
+          <div class="header-logo-wrapper">
+            <img class="header-logo" src="img/logo.png" />
+          </div>
+          <div class="header-intro__buttons-wrapper">
+            <button class="header-intro__button">who are we?</button>
+            <button class="header-intro__button">play video</button>
+          </div>
+        </section>
+      </div>
     </header>
     <main>
       <section>
-        <h2>Forest</h2>
-        <button>who are we?</button>
-        <button>play video</button>
-      </section>
-      <section>
         <h2 class="what-can-we-do-text">What can we do</h2>
+        <ul>
+          <li>
+            <img src="img/what-can-we-do-1.jpg" width="305" height="240" />
+            <h3>Header</h3>
+            <p>Lorem ipsum</p>
+            <button>Read more</button>
+          </li>
+          <li>
+            <img src="img/what-can-we-do-2.jpg" width="305" height="240" />
+            <h3>Header</h3>
+            <p>Lorem ipsum</p>
+            <button>Read more</button>
+          </li>
+          <li>
+            <img src="img/what-can-we-do-3.jpg" width="305" height="240" />
+            <h3>Header</h3>
+            <p>Lorem ipsum</p>
+            <button>Read more</button>
+          </li>
+        </ul>
       </section>
       <section>
         <h2>Posts</h2>

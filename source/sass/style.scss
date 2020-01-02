@@ -1,29 +1,8 @@
-$accent-color: #b0bc42;
-$main-color: #464849;
-$additional-color: #ffffff;
-$background-color: #fafafa;
-$additional-background-color: #2d2d2d;
-
-$desktop-width: 1140px;
-$icon-size: 24px;
-
-@font-face {
-  font-family: 'Lavanderia';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/lavanderia-regular.otf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lavanderia Sturdy';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/lavanderia-sturdy.otf') format('truetype');
-}
-
-* {
-  color: red;
-}
+@import "variables.scss";
+@import "base.scss";
+@import "mixins.scss";
+@import "./blocks/header.scss";
+@import "./blocks/news.scss";
 
 .what-can-we-do-text {
   font-size: 46px;
@@ -47,26 +26,6 @@ $icon-size: 24px;
   font-size: 16px;
   font-family: 'Open Sans';
   color: $accent-color;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.25;
-  text-align: center;
-}
-
-.language-link {
-  font-size: 13px;
-  font-family: 'Open Sans';
-  color: $additional-color;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.538;
-  text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.17);
-}
-
-.intro-button {
-  font-size: 16px;
-  font-family: 'Open Sans';
-  color: $additional-color;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.25;

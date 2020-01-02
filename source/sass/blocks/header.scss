@@ -1,0 +1,60 @@
+.header {
+  min-height: 95px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  background-image: url("../img/intro-bg.jpg");
+}
+
+.header-nav__list {
+  @include reset-list;
+
+  display: flex;
+}
+
+.header-nav__item {}
+
+.header-nav__link {
+  margin-right: 30px;
+
+  font-size: 13px;
+  font-family: 'Open Sans';
+  color: $additional-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.538;
+  text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.17);
+}
+
+.header-logo-wrapper {
+  width: 555px;
+  height: 265px;
+  margin: 0 auto;
+  margin-bottom: 175px;
+}
+
+.header-intro__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.header-intro__button {
+  min-width: 250px;
+  min-height: 55px;
+
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: $additional-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+
+  background: none;
+  border: 2px solid $additional-color;
+  border-radius: 2px;
+
+  &:nth-of-type(1) {
+    margin-right: 30px;
+  }
+}
