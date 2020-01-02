@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: $additional-color;
+}
+
 img {
   width: 100%;
   height: auto;
