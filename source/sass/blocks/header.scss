@@ -20,6 +20,7 @@
 }
 
 .header-nav__link {
+  position: relative;
   margin-right: 30px;
 
   font-size: 13px;
@@ -36,9 +37,24 @@
   &:focus {
     opacity: 0.6;
   }
+
+  &::after {
+    position: absolute;
+    content: "::";
+    font-size: 18px;
+    top: -6px;
+    right: -20px;
+    color: $additional-color;
+    opacity: 0.1;
+  }
+}
+
+.header-nav__item:nth-last-of-type(1) .header-nav__link::after {
+  display: none;
 }
 
 .header-lang__button {
+  position: relative;
   margin-right: 30px;
   padding: 0;
 
@@ -58,6 +74,20 @@
   &:focus {
     opacity: 0.6;
   }
+
+  &::after {
+    position: absolute;
+    content: "::";
+    font-size: 18px;
+    top: -6px;
+    right: -20px;
+    color: $additional-color;
+    opacity: 0.1;
+  }
+}
+
+.header-lang__item:nth-last-of-type(1) .header-lang__button::after {
+  display: none;
 }
 
 .header-logo-wrapper {
