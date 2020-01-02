@@ -115,22 +115,52 @@
 }
 
 .news__item-like {
-  width: 15px;
-  height: 15px;
-  margin-right: 45px;
-  background-color: coral;
+  width: 22px;
+  height: 19px;
+  margin-right: 20px;
+  background: none;
+  background-image: url("../img/icon-like.png");
   border: none;
   cursor: pointer;
+
+  &--liked {
+    background-image: url("../img/icon-like-active.png");
+  }
+}
+
+.news__item--picture .news__item-like {
+  background-image: url("../img/icon-like-light.png");
+
+  &--liked {
+    background-image: url("../img/icon-like-active.png");
+  }
 }
 
 .news__item-tags {
+  position: relative;
+  padding-left: 25px;
   font-family: 'Open Sans';
   font-size: 10px;
   font-weight: 300;
   text-transform: uppercase;
   color: $main-text-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: -2px;
+    width: 30px;
+    height: 20px;
+    background-image: url("../img/icon-tag.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .news__item--picture .news__item-tags {
   color: $additional-color;
+
+  &::before {
+    background-image: url("../img/icon-tag-light.png");
+  }
 }
