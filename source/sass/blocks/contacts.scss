@@ -4,6 +4,7 @@
 }
 
 .contacts__list {
+  position: relative;
   @include reset-list;
   min-height: 180px;
   display: flex;
@@ -11,9 +12,35 @@
   align-items: center;
 
   background-color: $main-color;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: -45px;
+    left: calc(50%-60px);
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    background-color: $main-color;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: -30px;
+    left: calc(50%-10px);
+    width: 20px;
+    height: 15px;
+    background-image: url("../img/icon-arrow-top.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .contacts__item {
+  z-index: 2;
   margin-right: 50px;
   font-family: "Open Sans";
   font-weight: 300;
