@@ -35,4 +35,11 @@
   font-size: 15px;
   color: $additional-color;
   text-transform: capitalize;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }
