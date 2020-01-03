@@ -1,0 +1,38 @@
+.footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-position: center;
+}
+
+.footer-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer__logo-wrapper {
+  width: 310px;
+  height: 155px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.footer__links-list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links-item {
+  margin-right: 50px;
+
+  &:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+}
+
+.footer__link {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
+  color: $additional-color;
+  text-transform: capitalize;
+}

@@ -1,0 +1,26 @@
+.contacts-wrapper {
+  max-width: 1760px;
+  min-width: 100vw;
+}
+
+.contacts__list {
+  @include reset-list;
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $main-color;
+}
+
+.contacts__item {
+  margin-right: 50px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
+  color: $additional-color;
+
+  &:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+}
