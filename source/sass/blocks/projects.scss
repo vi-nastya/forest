@@ -1,0 +1,115 @@
+.projects-wrapper {
+  width: 1760px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project {
+  position: relative;
+  min-width: 440px;
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 0 0;
+
+  cursor: pointer;
+
+  &--hut {
+    background-image: url("../img/project-mask.png"), url("../img/project-hut.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-hut.jpg");
+    }
+  }
+
+  &--bear {
+    background-image: url("../img/project-mask.png"), url("../img/project-bear.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-bear.jpg");
+    }
+  }
+
+  &--winter {
+    background-image: url("../img/project-mask.png"), url("../img/project-winter.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-winter.jpg");
+    }
+  }
+
+  &--sea {
+    background-image: url("../img/project-mask.png"), url("../img/project-sea.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-sea.jpg");
+    }
+  }
+
+  &--road {
+    background-image: url("../img/project-mask.png"), url("../img/project-road.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-road.jpg");
+    }
+  }
+
+  &--bridge {
+    background-image: url("../img/project-mask.png"), url("../img/project-bridge.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-bridge.jpg");
+    }
+  }
+
+  &--leaves {
+    background-image: url("../img/project-mask.png"), url("../img/project-leaves.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-leaves.jpg");
+    }
+  }
+
+  &--sheep {
+    background-image: url("../img/project-mask.png"), url("../img/project-sheep.jpg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/project-mask-hover.png"), url("../img/project-sheep.jpg");
+    }
+  }
+}
+
+.project-name {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Lavanderia";
+  font-weight: 400;
+  font-size: 28px;
+
+  color: $additional-color;
+}
+
+.project-comment {
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  color: $additional-color;
+}
