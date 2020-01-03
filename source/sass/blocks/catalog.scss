@@ -1,0 +1,53 @@
+.catalog {
+  background-color: $additional-color;
+}
+
+.catalog-wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.catalog__section-header {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.catalog-lorem,
+.catalog-dolor {
+  @include reset-list;
+}
+
+.catalog-lorem__item,
+.catalog-dolor__item {
+  min-width: 360px;
+  padding-left: 25px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-lorem__name,
+.catalog-dolor__name {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  color: $main-color;
+}
+
+.catalog-lorem__count,
+.catalog-dolor__count {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  color: $main-color;
+}
